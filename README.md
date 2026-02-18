@@ -29,10 +29,10 @@ gitbushを使います
 - テンプレを使って調べたことをまとめていく
 - 出典はリンクで貼ること
 - 親issueの調査中に疑問に思ったことは調査のラベルを付けて子issueとして管理すること
-- コミットは `refs #Issue番号` を付ける
+- コミットは **#Issue番号**を付ける
 
 ## チートシート
 - [Gitコマンド](docs/cheatsheets/git-commands.md)
-- [Markdownの記述方法](docs/cheatsheets/markdown.md)
+- [Markdownの記述方法](docs/cheatsheet/markdown.md)
 - [Mermaidの記述方法](docs/cheatsheets/mermaid.md)
 
