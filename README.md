@@ -32,10 +32,10 @@ gitbushを使います
 - コミットは **#Issue番号**を付ける
 
 ## チートシート
-- [Gitコマンド](docs/cheatsheets/git-commands.md)
+- [Gitコマンド](docs/cheatsheet/git-commands.md)
 - [Markdownの記述方法](docs/cheatsheet/markdown.md)
-- [Mermaidの記述方法](docs/cheatsheets/mermaid.md)
+- [Mermaidの記述方法](docs/cheatsheet/mermaid.md)
 
 ## 目次
 
-[文字コードについて](docs/charset.md)
+[文字コードについて](docs/infra/charset.md)
