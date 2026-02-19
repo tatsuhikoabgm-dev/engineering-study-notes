@@ -36,3 +36,6 @@ gitbushを使います
 - [Markdownの記述方法](docs/cheatsheet/markdown.md)
 - [Mermaidの記述方法](docs/cheatsheets/mermaid.md)
 
+## 目次
+
+[文字コードについて](docs/charset.md)
