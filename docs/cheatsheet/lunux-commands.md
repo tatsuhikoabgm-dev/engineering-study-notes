@@ -8,7 +8,7 @@ ls
 cd
 clear
 mv
-rmv
+rm
 mkdir
 grep
 cat

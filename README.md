@@ -34,8 +34,10 @@ gitbushを使います
 ## チートシート
 - [Gitコマンド](docs/cheatsheet/git-commands.md)
 - [Markdownの記述方法](docs/cheatsheet/markdown.md)
-- [Mermaidの記述方法](docs/cheatsheet/mermaid.md)
+- [Mermaidの記述方法](docs/cheatsheet/mermaid/README.md)
 
 ## 目次
 
 [文字コードについて](docs/infra/charset.md)
+- [Mermaid](docs/cheatsheet/mermaid/README.md)
+    - [Flowchart](docs/cheatsheet/mermaid/flowchart.md)
