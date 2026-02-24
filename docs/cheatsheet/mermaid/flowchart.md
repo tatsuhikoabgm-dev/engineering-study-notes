@@ -15,7 +15,7 @@ K{{⑦あいうえお}}
 ```mermaid
 flowchart TD
 L[/⑧あいうえお\]
-M[\⑨あいうえお/]
+M[\⑨あいうえお/] 
 F[/⑩あいうえお/]
 G[\⑪あいうえお\]
 H[[⑫あいうえお]]
@@ -74,7 +74,7 @@ aaaaaa[ID:aaaaaa]
 >>
 >>aaaaaa-->これもOK
 
-## サブグループ
+## サブグラフ
 
 ```mermaid
 flowchart TD
@@ -91,7 +91,83 @@ F---A
 B & D---H/
 ```
 
+## ディレクション
 
+```mermaid
+    flowchart LR 
+    A[あいうえお]
+    E[なにぬねの]
+subgraph sub
+    direction TB
+    B[かきくけこ]
+    C[さしすせそ]
+    D[たちつてと]
+end
+
+```
+
+
+## チャッピーに問題を出してもらった
+
+```mermaid
+flowchart LR
+    
+subgraph Frontend
+    A[Browser]
+    B[React]
+end
+
+subgraph Backend
+    C[Controller]
+    D[Service]
+    E[Mapper]
+end
+
+    F[(MySQL)]
+
+A-->B-->C-->D-->E
+E-->F
+```
+```mermaid
+    flowchart TD
+        subgraph AWS
+            subgraph EC2
+                N[NginX]-->S[SpringBoot]
+                end
+        subgraph RDS
+            M[(MySQL)]
+        end
+
+        end
+
+S-->M
+```
+
+```mermaid
+    flowchart LR
+
+    subgraph Client
+        direction LR
+        u[User]--> b[Browser]
+    end
+    
+    subgraph Server
+        direction TB
+        
+        subgraph App
+            direction TB
+            c[Controller]-->s[Service]
+        end
+        
+        subgraph db 
+            direction TB
+           s-->My[(MySQL)]
+        end
+    end
+    
+    b-->c
+    
+```
 
 
 
