@@ -41,3 +41,4 @@ gitbushを使います
 [文字コードについて](docs/infra/charset.md)
 - [Mermaid](docs/cheatsheet/mermaid/README.md)
     - [Flowchart](docs/cheatsheet/mermaid/flowchart.md)
+    - [Sequence](docs/cheatsheet/mermaid/sequence.md)
