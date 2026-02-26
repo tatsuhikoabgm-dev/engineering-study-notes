@@ -333,6 +333,42 @@ sequenceDiagram
     
 ```
 
+```mermaid
+sequenceDiagram
+    
+    actor User
+    participant ResetController
+    participant ResetService
+    participant UserRepository
+    participant TokenService
+    participant MailService
+    participant AuditService
+    participant InternalLogger
+
+    User->>+ResetController:POST
+    ResetController->>+ResetService:ユーザー照会依頼
+    ResetService->>+UserRepository:ユーザー検索
+    UserRepository-->>-ResetService:UserEntity or null
+    alt ユーザーあり
+        ResetService->>+TokenService:トークン生成
+        TokenService-->>-ResetService:トークン
+        ResetService->>+MailService:トークン付きメール送信依頼
+        par 並行処理
+            ResetService->>AuditService:監査ログ
+        end
+        opt メール送信失敗時
+            MailService-->>ResetService:例外 or 200
+            ResetService-->>ResetController:200
+            ResetController-->>User:200
+            ResetService->>InternalLogger:失敗ログ作成
+        end
+    else ユーザーなし
+        ResetService-->>-ResetController:200
+        ResetController-->>-User:200
+    end
+    
+
+```
 
 
 
